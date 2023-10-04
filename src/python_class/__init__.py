@@ -125,3 +125,23 @@ print('{:.2e}'.format(1000000))
 print('{0:d}-{2:b}-{1:o}-{0:x}'.format(10, 20, 30))
 print('{n1:d}-{n3:b}-{n2:o}-{n1:x}'.format(n1=10, n2=20, n3=30))
 print('{n1:!>5d}-{n3:?^8b}-{n2:o}-{n1:x}'.format(n1=10, n2=20, n3=30))
+
+# %%
+# Exercise_1
+def floatTryParse(value):
+    try:
+        return float(value), True
+    except ValueError:
+        return value, False
+
+def squareLength():
+    sideLength = floatTryParse(input('請輸入正方形邊長：'))
+    if sideLength[1]:
+      print('邊長為：%.2f\n週長為：%.2f\n面積為：%.2f' %(sideLength[0], sideLength[0] * 4, sideLength[0] ** 2))
+    else:
+      print('型態錯誤，請重新輸入數字')
+      squareLength()
+
+squareLength()
+
+# %%
