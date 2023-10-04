@@ -124,3 +124,4 @@ print('{:.2e}'.format(1000000))
 
 print('{0:d}-{2:b}-{1:o}-{0:x}'.format(10, 20, 30))
 print('{n1:d}-{n3:b}-{n2:o}-{n1:x}'.format(n1=10, n2=20, n3=30))
+print('{n1:!>5d}-{n3:?^8b}-{n2:o}-{n1:x}'.format(n1=10, n2=20, n3=30))
