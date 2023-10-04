@@ -107,4 +107,19 @@ print('%d除%d是%f' %(20, 7, 10/7))
 print('%5d除%5d是%.3f' %(20, 7, 10/7))
 print('%-5d除%-5d是%.3f' %(20, 7, 10/7))
 print('%-8d除%-8d是%10.3f' %(20, 7, 10/7))
+
+# %%
+# 格式化字串(Python only)
+print('{:.2f}'.format(3.1415926))
+print('{:10s}'.format('ABCDE'))
+print('{:.0f}'.format(3.1415926))
+print('{:0>2d}'.format(3))
+print('{:x>4d}'.format(10))
+print('{:,}'.format(1000000))
+print('{:10d}'.format(13))
+print('{:<10d}'.format(13))
+print('{:^10d}'.format(13))
+print('{:.2%}'.format(0.13))
+print('{:.2e}'.format(1000000))
+
 # %%
