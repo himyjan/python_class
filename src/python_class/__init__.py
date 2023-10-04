@@ -25,8 +25,14 @@ print('''bool(123-32145
 
 # 跳脫字元 和 格式化 寫法是跨程式語言
 # 跳脫字元 通常以反斜線\ 加上字元表示
-print('//') # 反斜線
-print("/'") # 單引號
-print('/"') # 雙引號
-print('/n') # 換行
-print('/t') # tab鍵
+print('\\') # 反斜線
+print("\'") # 單引號
+print('\"') # 雙引號
+print('\n') # 換行
+print('\t') # tab鍵
+
+#%%
+print('it\'s a good day')
+
+print('it\'s a go\tod \nday')
+print('"is a good day"')
