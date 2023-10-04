@@ -94,8 +94,12 @@ print(1,2,3,4,5, end='---')
 print(1,2,3,4,5)
 
 # %%
-# num=eval(input())
+# 輸入
+# input()輸入後型態為字串
+# eval()其他型態轉成數值型態
+# num=eval(input()) 或 num=int(input()) 或 num=float(input())
 
+# %%
 # 格式化字串(通用型)
 s="%s: %d %s: %f" % ("Number整數", 123, "Float小數", 12.3)
 print(s)
