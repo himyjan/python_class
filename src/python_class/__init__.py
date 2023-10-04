@@ -36,3 +36,7 @@ print('it\'s a good day')
 
 print('it\'s a go\tod \nday')
 print('"is a good day"')
+
+# 命名規則 第一個字元可以是英文字母、中文、或底線_，第二個字元之後可以是英文字母、數字、中文或底線_
+# 英文字母有大小寫之分
+# 不能包含空白、＠、特殊符號
