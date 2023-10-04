@@ -86,3 +86,11 @@ str(1.23)
 # 注意：// 除法整數部份的餘數，**
 
 # %%
+print(1, 2.5, True, 'xyz')
+name='Bob'
+print('Hello', name, sep='***')
+print(1,2,3,4,5, sep='6')
+print(1,2,3,4,5, end='---')
+print(1,2,3,4,5)
+
+# %%
