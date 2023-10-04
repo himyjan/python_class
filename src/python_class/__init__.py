@@ -55,7 +55,7 @@ num2=567
 num1=789
 num3=num1+num2
 
-del num2
+del num2 # del 變數刪除 刪除num2
 print(num3)
 
 # %%
@@ -74,4 +74,12 @@ x,y,z=1,2,3    # x=1 y=2 z=3
 # <<= >>= &= ^= |=
 # 注意：// 除法整數部份的餘數，**
 
+#%%
+# 型態變換
+int('10')
+int(3.14)
+int(True)
+int(False)
+str(1.23)
 
+# %%
