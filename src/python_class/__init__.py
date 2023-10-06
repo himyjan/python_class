@@ -1,3 +1,4 @@
+# day 1 2023_10_04
 # int整數
 print(123)
 
@@ -66,7 +67,7 @@ d="defg"      # 只賦值給 d
 x,y,z=1,2,3    # x=1 y=2 z=3
 
 #%%
-# 型態變換
+# Python 型態變換
 int('10')
 int(3.14)
 int(True)
@@ -94,13 +95,13 @@ print(1,2,3,4,5, end='---')
 print(1,2,3,4,5)
 
 # %%
-# 輸入
+# Python 輸入
 # input()輸入後型態為字串
 # eval()其他型態轉成數值型態
 # num=eval(input()) 或 num=int(input()) 或 num=float(input())
 
 # %%
-# 格式化字串(通用型)
+# Python 格式化字串(通用型)
 s="%s: %d %s: %f" % ("Number整數", 123, "Float小數", 12.3)
 print(s)
 print('%d除%d是%f' %(20, 7, 10/7))
@@ -109,7 +110,7 @@ print('%-5d除%-5d是%.3f' %(20, 7, 10/7))
 print('%-8d除%-8d是%10.3f' %(20, 7, 10/7))
 
 # %%
-# 格式化字串(Python only)
+# Python 格式化字串(Python only)
 print('{:.2f}'.format(3.1415926))
 print('{:10s}'.format('ABCDE'))
 print('{:.0f}'.format(3.1415926))
@@ -143,5 +144,14 @@ def squareLength():
       squareLength()
 
 squareLength()
+
+# %%
+# day 3 2023_10_06
+# Python 自訂函式
+def sayHello():
+    print('sayHello!')
+    print('早安！')
+    
+sayHello()
 
 # %%
