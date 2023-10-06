@@ -138,10 +138,10 @@ def floatTryParse(value):
 def squareLength():
     sideLength = floatTryParse(input('請輸入正方形邊長：'))
     if sideLength[1]:
-      print('邊長為：%.2f\n週長為：%.2f\n面積為：%.2f' %(sideLength[0], sideLength[0] * 4, sideLength[0] ** 2))
+        print('邊長為：%.2f\n週長為：%.2f\n面積為：%.2f' %(sideLength[0], sideLength[0] * 4, sideLength[0] ** 2))
     else:
-      print('型態錯誤，請重新輸入數字')
-      squareLength()
+        print('型態錯誤，請重新輸入數字')
+        squareLength()
 
 squareLength()
 
@@ -167,5 +167,27 @@ msg2 = sayHello3()
 
 print(msg1)
 print(msg2)
+
+# %%
+# Exercise_2
+def floatTryParse(value):
+    try:
+        return float(value), True
+    except ValueError:
+        return value, False
+
+def compute(x, y):
+    return x * y
+
+def multiplyTwoNum():
+    num1 = floatTryParse(input())
+    num2 = floatTryParse(input())
+    if num1[1] and num2[1]:
+        print("%.2f" %(compute(x = num1[0], y = num2[0])))
+    else:
+        print('型態錯誤，請重新輸入2次數字')
+        multiplyTwoNum()
+
+multiplyTwoNum()
 
 # %%
