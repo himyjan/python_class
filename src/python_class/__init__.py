@@ -154,4 +154,18 @@ def sayHello():
     
 sayHello()
 
+def sayHello2():
+    msg = 'sayHello'
+    return msg
+
+def sayHello3():
+    msg = '早安'
+    return msg
+
+msg1 = sayHello2()
+msg2 = sayHello3()
+
+print(msg1)
+print(msg2)
+
 # %%
