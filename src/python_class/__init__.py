@@ -170,24 +170,24 @@ print(msg2)
 
 # %%
 # Exercise_2
-def floatTryParse(value):
+def intTryParse(value):
     try:
-        return float(value), True
+        return int(value), True
     except ValueError:
         return value, False
 
 def compute(x, y):
     return x * y
 
-def multiplyTwoNum():
-    num1 = floatTryParse(input())
-    num2 = floatTryParse(input())
+def multiplyTwoInt():
+    num1 = intTryParse(input())
+    num2 = intTryParse(input())
     if num1[1] and num2[1]:
-        print("%.2f" %(compute(x = num1[0], y = num2[0])))
+        print("%d" %(compute(x = num1[0], y = num2[0])))
     else:
-        print('型態錯誤，請重新輸入2次數字')
-        multiplyTwoNum()
+        print('型態錯誤，請重新輸入2次整數')
+        multiplyTwoInt()
 
-multiplyTwoNum()
+multiplyTwoInt()
 
 # %%
