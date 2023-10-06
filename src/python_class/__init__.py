@@ -191,3 +191,26 @@ def multiplyTwoInt():
 multiplyTwoInt()
 
 # %%
+# Exercise_3
+def intTryParse(value):
+    try:
+        return int(value), True
+    except ValueError:
+        return value, False
+
+def isMultiplesOfTwoOrSeven():
+    num = intTryParse(input())
+    if num[1]:
+        if num[0] % 2 == 0 and num[0] % 7 == 0:
+            print('%d 是 2 及 7 的倍數' %(num[0]))
+        elif num[0] % 2 == 0:
+            print('%d 是 2 的倍數' %(num[0]))
+        elif num[0] % 2 == 0 and num[0] % 7 == 0:
+            print('%d 是 7 的倍數' %(num[0]))
+        else:
+            print('%d 不是 2 及 7 的倍數' %(num[0]))
+    else:
+        print('型態錯誤，請重新輸入整數')
+        isMultiplesOfTwoOrSeven()
+
+isMultiplesOfTwoOrSeven()
