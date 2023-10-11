@@ -298,3 +298,31 @@ del num3[2]
 del num3[2]
 
 print(num3)
+
+print([1,3.5,'X']==['X',3.5,1])
+
+print([1,3.5,'X']==[1,3.5,'X'])
+
+print([i for i in range(10)])
+
+num3.append(33)
+
+print(num3)
+
+num3.extend([36])
+
+print(num3)
+
+print(num3.count(30))
+
+print(num3.index(30))
+
+num3.insert(2,9)
+
+print(num3)
+
+num3.pop()
+
+print(num3)
+
+# %%
