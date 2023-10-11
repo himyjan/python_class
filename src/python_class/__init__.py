@@ -215,6 +215,7 @@ def isMultiplesOfTwoOrSeven():
 
 isMultiplesOfTwoOrSeven()
 
+# Python 迴圈
 # while 迴圈
 # while...else...迴圈
 # .upper() 轉成全大寫
@@ -277,3 +278,23 @@ def isMultiplesOfSevenInRange(): # version1
 isMultiplesOfSevenInRange()
 
 # %%
+# Python list串列
+num={1,2,3}
+
+num=list(num)
+
+num2=[]
+
+num3=[3,6,9,12,15,18,21,24,27,30]
+
+num4=[16,[num2,num3]]
+
+num5=num2+num3
+
+print(num3[0],num3[1],num3[2],num3[-1])
+
+del num3[2]
+
+del num3[2]
+
+print(num3)
