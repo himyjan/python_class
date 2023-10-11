@@ -214,3 +214,32 @@ def isMultiplesOfTwoOrSeven():
         isMultiplesOfTwoOrSeven()
 
 isMultiplesOfTwoOrSeven()
+
+# while 迴圈
+# while...else...迴圈
+# .upper() 轉成全大寫
+# .lower() 轉成全大寫
+# 有些情況下反向思考更容易寫 ！=不等於
+# for ... in ...:
+# range(5) #0~4 間隔1
+# range(100) #0~99 間隔1
+# for i in range(5):
+# match...case...： 是python 3.10 版本後加入的 其他程式語言switch...case...:
+# break 無條件跳離迴圈 and continue 無條件跳離這次迴圈 continue 後方的程式碼
+
+# %%
+# only python version >= 3.10
+num = 3
+match num:
+    case 0:
+        print('number is %d' %(num))
+    case 1:
+        print('number is %d' %(num))
+    case 2:
+        print('number is %d' %(num))
+    case 3:
+        print('number is %d' %(num))
+    case 4:
+        print('number is %d' %(num))
+
+# %%
