@@ -259,7 +259,7 @@ def isMultiplesOfSevenInRange(): # version1
         print('從1到%d，所有七的倍數的總和是：%d' %(rangeNum[0], summary))
     else:
         print('型態錯誤，請重新輸入正整數')
-        isMultiplesOfTwoOrSeven()
+        isMultiplesOfSevenInRange()
 
 # def isMultiplesOfSevenInRange(): # version2
 #     rangeNum = intTryParse(input('請輸入一個數字(正整數)：'))
@@ -272,7 +272,7 @@ def isMultiplesOfSevenInRange(): # version1
 #         print('從1到%d，所有七的倍數的總和是：%d' %(rangeNum[0], summary))
 #     else:
 #         print('型態錯誤，請重新輸入正整數')
-#         isMultiplesOfTwoOrSeven()
+#         isMultiplesOfSevenInRange()
     
 isMultiplesOfSevenInRange()
 
