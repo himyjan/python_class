@@ -329,7 +329,9 @@ num3.sort(reverse=True)
 
 print(num3)
 
-num4=sorted(num3,reverse=True)
+num4=sorted(num3)
+
+print(num3)
 
 print(num4)
 
