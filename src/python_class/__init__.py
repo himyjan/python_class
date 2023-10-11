@@ -325,4 +325,12 @@ num3.pop()
 
 print(num3)
 
+num3.sort(reverse=True)
+
+print(num3)
+
+num4=sorted(num3,reverse=True)
+
+print(num4)
+
 # %%
