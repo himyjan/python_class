@@ -251,7 +251,7 @@ def intTryParse(value):
     except ValueError:
         return value, False
 
-def isMultiplesOfSevenInRange(): # version1
+def sumOfMultiplesOfSevenInRange(): # version1
     rangeNum = intTryParse(input('請輸入一個數字(正整數)：'))
     if rangeNum[1] and rangeNum[0] > 1:
         summary = 0
@@ -260,9 +260,9 @@ def isMultiplesOfSevenInRange(): # version1
         print('從1到%d，所有七的倍數的總和是：%d' %(rangeNum[0], summary))
     else:
         print('型態錯誤，請重新輸入正整數')
-        isMultiplesOfSevenInRange()
+        sumOfMultiplesOfSevenInRange()
 
-# def isMultiplesOfSevenInRange(): # version2
+# def sumOfMultiplesOfSevenInRange(): # version2
 #     rangeNum = intTryParse(input('請輸入一個數字(正整數)：'))
 #     if rangeNum[1] and rangeNum[0] > 1:
 #         count = 1
@@ -273,9 +273,9 @@ def isMultiplesOfSevenInRange(): # version1
 #         print('從1到%d，所有七的倍數的總和是：%d' %(rangeNum[0], summary))
 #     else:
 #         print('型態錯誤，請重新輸入正整數')
-#         isMultiplesOfSevenInRange()
+#         sumOfMultiplesOfSevenInRange()
     
-isMultiplesOfSevenInRange()
+sumOfMultiplesOfSevenInRange()
 
 # %%
 # Python list串列
