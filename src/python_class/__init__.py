@@ -243,3 +243,25 @@ match num:
         print('number is %d' %(num))
 
 # %%
+# Exercise_4
+def intTryParse(value):
+    try:
+        return int(value), True
+    except ValueError:
+        return value, False
+
+def isMultiplesOfSevenInRange():
+    rangeNum = intTryParse(input('請輸入一個數字(正整數)：'))
+    if rangeNum[1] and rangeNum[0] > 1:
+        count = 1
+        sum = 0
+        while count * 7 <= rangeNum[0]:
+            sum += count * 7
+            count+=1
+        print('從1到%d，所有七的倍數的總和是：%d' %(rangeNum[0], sum))
+    else:
+        print('型態錯誤，請重新輸入正整數')
+        isMultiplesOfTwoOrSeven()
+    
+isMultiplesOfSevenInRange()
+# %%
