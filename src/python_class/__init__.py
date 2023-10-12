@@ -367,5 +367,17 @@ def createListTupleSet():
 createListTupleSet()
 
 # %%
+file=open('data.txt', 'w') # 'w' 'x' 'a'
+file.write('123')
+file.write('123')
+file.write('123')
+file.close()
+
+file=open('data.txt')
+
+con=file.read()
+print(con)
+
+file.close()
 
 # %%
