@@ -374,10 +374,13 @@ file.write('123')
 file.close()
 
 file=open('data.txt')
-
 con=file.read()
 print(con)
-
 file.close()
+
+with open('data.txt', 'w') as file:
+    file.write('123')
+    file.write('123')
+    file.write('123')
 
 # %%
