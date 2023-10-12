@@ -358,7 +358,7 @@ def createListTupleSet():
         for i in range(Num[0]):
             item = inputDigit(i+1)
             dataList.append(item)
-            dataList
+            dataList.sort()
         print(dataList, tuple(dataList), set(dataList), sep='\n')
     else:
         print('型態錯誤，請重新輸入正整數')
