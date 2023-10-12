@@ -336,3 +336,33 @@ print(num3)
 print(num4)
 
 # %%
+# Exercise_5
+def intTryParse(value):
+    try:
+        return int(value), True
+    except ValueError:
+        return value, False
+
+def inputDigit(index):
+    item = intTryParse(input('請輸入第%d個數字(正整數)：' %(index)))
+    if item[1]:
+        return item[0]
+    else:
+        print('型態錯誤，請重新輸入正整數')
+        inputDigit()
+
+def createListTupleSet():
+    Num = intTryParse(input('請輸入欲產生的個數(正整數)：'))
+    dataList = []
+    if Num[1] and Num[0] > 0:
+        for i in range(Num[0]):
+            item = inputDigit(i+1)
+            dataList.append(item)
+        print(dataList, tuple(dataList), set(dataList), sep='\n')
+    else:
+        print('型態錯誤，請重新輸入正整數')
+        createListTupleSet()
+        
+createListTupleSet()
+
+# %%
