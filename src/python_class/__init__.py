@@ -383,4 +383,8 @@ with open('data.txt', 'w') as file:
     file.write('123')
     file.write('123')
 
+with open('data.txt') as file:
+    con=file.read()
+    print(con)
+
 # %%
