@@ -349,7 +349,7 @@ def inputDigit(index):
         return item[0]
     else:
         print('型態錯誤，請重新輸入正整數')
-        inputDigit()
+        inputDigit(index)
 
 def createListTupleSet():
     Num = intTryParse(input('請輸入欲產生的個數(正整數)：'))
