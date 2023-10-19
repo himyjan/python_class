@@ -388,3 +388,35 @@ with open('data.txt') as file:
     print(con)
 
 # %%
+# Exercise_6
+import csv
+
+indata = 'input.csv'
+outdata = 'output.csv'
+
+with open ( indata , encoding = 'utf8') as file:
+    data1 = csv.reader(file)
+    list_data1 = list(data1)
+
+with open ( outdata , 'w', newline = '',encoding = 'ansi' ) as two:
+    data2 = csv.writer (two)
+    
+    for i in list_data1:
+        data2.writerow (i)  
+    
+    for i in list_data1:
+        data2.writerow (list_data1[i])
+    
+    data2.writerow(['----------'])
+    data2.writerow(['花茶',15])
+    data2.writerow(['蜜茶',10])
+    
+# %%
+import json
+
+indata = 'input.json'
+
+with open ( indata , encoding = 'utf8') as file:
+    data = json.load(file)
+    for item in data:
+        print([item['sno'], item['sna'], item['tot']])
