@@ -398,8 +398,8 @@ with open ( indata , encoding = 'utf8') as file:
     data1 = csv.reader(file)
     list_data1 = list(data1)
 
-with open ( outdata , 'w', newline = '',encoding = 'ansi' ) as two:
-    data2 = csv.writer (two)
+with open ( outdata , 'w', newline = '',encoding = 'ansi' ) as file:
+    data2 = csv.writer (file)
     
     for i in list_data1:
         data2.writerow (i)  
