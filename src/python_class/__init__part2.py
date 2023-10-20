@@ -8,7 +8,12 @@ print(a)
 # %%
 import numpy as np
 
-x = np.arange(12).reshape(2,6)
+x = np.arange(12).reshape(3,4)
 
 print(x)
 # %%
+import numpy as np
+
+y = x[np.ix_([0,2],[1,3])]
+
+print(y)
