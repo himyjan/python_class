@@ -9,6 +9,8 @@ dependencies = [
     "pdm-vscode>=0.1.1",
     "ipykernel>=6.25.2",
     "numpy>=1.24.4",
+    "matplotlib>=3.8.0",
+    "mpl-tc-fonts>=1.0.1",
 ]
 requires-python = ">=3.9,<3.13"
 readme = "README.md"
