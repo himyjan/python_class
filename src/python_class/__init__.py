@@ -444,21 +444,17 @@ rows = []
 # Parsing the XML file
 tree = et.parse('FarmTransData.xml')
 root = tree.getroot()
-count = 0
-for i in root:
-    id = i.find("作物代號").text
-    name = i.find("作物名稱").text
-    marketId = i.find("市場代號").text
-    average = i.find("平均價").text
-    amout = i.find("交易量").text
+for i in range(5):
+    id = root[i][1].text
+    name = root[i][2].text
+    marketId = root[i][3].text
+    average = root[i][8].text
+    amount = root[i][9].text
 
-    rows.append([id, name, marketId, average, amout])
-    count += 1
-    if count == 5:
-        break
+    rows.append([id, name, marketId, average, amount])
 
 # Writing data to CSV file
-with open('output.csv', 'w', newline='', encoding='utf-8') as file:
+with open('write.csv', 'w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
     writer.writerow(cols)
     writer.writerows(rows)
