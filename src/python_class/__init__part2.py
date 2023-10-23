@@ -41,3 +41,25 @@ plt.title("數據圖")
 plt.xlabel("横坐標")
 plt.ylabel("縱坐標")
 plt.show()
+
+# %%       
+# Exercise_8
+
+import numpy as np
+np_rand=np.random.randint(1,21,size=20)
+print("隨機正整數:",np_rand)
+print("X矩陣內容:")
+x=np_rand.reshape(5,4)
+print(x)
+print("最大:",np.max(np_rand))
+print("最小:",np.min(np_rand))
+print("平均:",np.mean(np_rand))
+print("總和:",np.sum(np_rand))
+print("標準差:",np.std(np_rand))
+z = x[np.ix_([0,-1],[0,-1])]
+print("四個角落元素:")
+print(z)
+
+# %%       
+# Exercise_9
+
