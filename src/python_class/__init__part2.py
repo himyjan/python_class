@@ -63,3 +63,17 @@ print(z)
 # %%       
 # Exercise_9
 
+
+# %% 
+import pandas as pd
+import numpy as np
+
+df = pd.DataFrame(np.random.randn(500,3), columns=list('xyz'), index=pd.date_range('1/1/2022', periods=500))
+
+df = df.cumsum()
+
+df.plot(colormap='gray').set_ylabel('Value', fontsize=12,)
+
+df2 = pd.DataFrame(np.random.rand(5,3), columns=['a', 'b', 'c'])
+
+df2.plot(kind='bar', fontsize=12, stacked=True)
